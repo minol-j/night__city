@@ -1,0 +1,103 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    max-width: 1440px;
+    height: 700px;
+    font-size: 20px;
+    text-align: center;
+    background-image: url("../img/city.png");
+    background-repeat: no-repeat;
+}
+
+.container {
+    margin-top: 100px;
+    display: inline-flex;
+    border: 20px solid rgb(169, 169, 169, 0.8);
+}
+
+.menu__points {
+    display: flex;
+}
+
+.menu {
+    width: 300px;
+    padding: 10px;
+    border: none;
+}
+
+.dropbtn {
+    text-align: left;
+    color: rgb(169, 169, 169, 0.8);
+    background-color: #ffffff;
+    border-right: 0.5px solid;
+    position: relative;
+}
+
+.menu__arrow {
+    height: 0;
+    width: 0;
+    border-top: 5px solid rgb(169, 169, 169, 0.8);
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    position: absolute;
+    top: 45%;
+    left: 90%;
+}
+
+.dropbtn:hover {
+    background-color: gainsboro;
+    cursor: pointer;
+}
+
+.search {
+    outline: none;
+}
+
+::placeholder {
+    color: rgb(169, 169, 169, 0.8);
+}
+
+.sbm {
+    color: #ffffff;
+    background-color: rgb(86, 74, 167);
+}
+
+.sbm:hover {
+    background-color: rgb(111, 34, 184);
+    cursor: pointer;
+}
+
+.list__menu li {
+    width: 300px;
+    list-style: none;
+    position: relative;
+}
+
+.list__menu a {
+    color: rgb(169, 169, 169, 0.8);
+    text-decoration: none;
+    display: block;
+}
+
+.list__menu ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+    padding: 0;
+}
+
+.list__menu li:hover > ul {
+    display: block;
+    background-color: gainsboro;
+}
+
+li li a {
+    padding: 5px;
+}
